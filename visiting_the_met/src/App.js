@@ -6,6 +6,8 @@ import CarouselContainer from './CarouselContainer';
 import Navigation from './Navigation'
 import Gallery from './Gallery';
 import Search from './Search';
+import Departments from './Departments';
+import About from './About';
 function App() {
   const [searchOptions, setSearchOptions] = useState({
     url: 'https://collectionapi.metmuseum.org/public/collection/v1/objects',
@@ -32,6 +34,18 @@ function App() {
         exact
         path='/themet'
         render={() => <Search searchOptions={searchOptions}/>}
+        
+        />
+        <Route
+        exact
+        path='/Departments'
+        render={() => <Departments/>}
+        
+        />
+        <Route
+        exact
+        path='/About'
+        render={() => <About/>}
         
         />
         <Redirect path='*' to='/>home' />

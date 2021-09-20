@@ -25,7 +25,7 @@ const VisitingTheMet = ({ handleSubmit, handleChange, searchString }) => {
             </Form.Text>
           </Col>
           <Col md="auto">
-            <Button type="submit" variant="dark" className="btn-sm">
+            <Button type="submit" variant="btn btn-outline-danger" className="btn-sm">
               Submit
             </Button>
           </Col>
